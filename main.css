@@ -420,7 +420,12 @@ header .nav {
   margin-left: 16px;
   align-items: center;
 }
-header .nav .search {
+header .nav .expand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header .nav .expand .search {
   background-color: #0d1117;
   border-radius: 6px;
   position: relative;
@@ -431,23 +436,23 @@ header .nav .search {
   min-width: 170px;
   max-width: 500px;
 }
-header .nav .search ::-moz-placeholder {
+header .nav .expand .search ::-moz-placeholder {
   color: #c9d1d9;
 }
-header .nav .search :-ms-input-placeholder {
+header .nav .expand .search :-ms-input-placeholder {
   color: #c9d1d9;
 }
-header .nav .search ::placeholder {
+header .nav .expand .search ::placeholder {
   color: #c9d1d9;
 }
-header .nav .search input {
+header .nav .expand .search input {
   padding: 0 12px;
   background-color: #0d1117;
   border: none;
   outline: none;
   color: #c9d1d9;
 }
-header .nav .search P {
+header .nav .expand .search P {
   position: absolute;
   right: 4px;
   top: 4px;
@@ -459,7 +464,7 @@ header .nav .search P {
   border-radius: 3px;
   font-size: 10px;
 }
-header .nav .links a {
+header .nav .expand .links a {
   color: #f0f6fc;
   font-weight: 300;
   margin-right: 16px;
