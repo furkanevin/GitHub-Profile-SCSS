@@ -1,3 +1,47 @@
 @import 'normalize';
 @import 'formalize';
 @import 'variables';
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  padding: 16px 32px;
+  background-color: $header-bg;
+  color: $header-color;
+  display: flex;
+  align-items: center;
+  font-family: $font;
+  font-size: 14px;
+  .logo {
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 16px;
+    .search {
+    }
+    .links {
+      a {
+        color: $header-color;
+        font-weight: 300;
+        margin-right: 16px;
+      }
+    }
+    .right-links {
+    }
+  }
+}
