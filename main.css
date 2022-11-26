@@ -433,8 +433,6 @@ header .nav .expand .search {
   overflow: hidden;
   padding: 6px;
   color: #fafafa;
-  min-width: 170px;
-  max-width: 500px;
 }
 header .nav .expand .search ::-moz-placeholder {
   color: #c9d1d9;
@@ -451,6 +449,8 @@ header .nav .expand .search input {
   border: none;
   outline: none;
   color: #c9d1d9;
+  min-width: 190px;
+  max-width: 210px;
 }
 header .nav .expand .search P {
   position: absolute;
@@ -464,9 +464,25 @@ header .nav .expand .search P {
   border-radius: 3px;
   font-size: 10px;
 }
+header .nav .expand .links {
+  min-width: 320px;
+}
 header .nav .expand .links a {
-  color: #f0f6fc;
+  color: #fafafa;
   font-weight: 300;
   margin-right: 16px;
+  font-size: 14px;
   line-height: 16.1px;
+  font-family: "Noto Sans";
+  font-weight: 400;
+}
+header .nav .right-links {
+  display: flex;
+  align-items: center;
+}
+header .nav .right-links a {
+  margin-right: 16px;
+}
+header .nav .right-links a svg {
+  color: #f0f6fc;
 }/*# sourceMappingURL=main.css.map */
