@@ -159,6 +159,17 @@ main {
       display: flex;
       justify-content: start;
       align-items: center;
+
+      .hide {
+        display: flex;
+        @include mobile-max {
+          display: none;
+        }
+      }
+      .selected {
+        border-bottom: 2px rgb(236, 109, 62) solid;
+        border-radius: 0;
+      }
       a {
         padding: 8px;
         line-height: 30px;
@@ -169,6 +180,7 @@ main {
         justify-content: center;
         align-items: center;
         gap: 5px;
+        color: #c9d1d9;
         span {
           background-color: #525355;
           border-radius: 50%;

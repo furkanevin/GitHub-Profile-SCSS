@@ -534,6 +534,18 @@ main nav .nav-content {
   justify-content: start;
   align-items: center;
 }
+main nav .nav-content .hide {
+  display: flex;
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  main nav .nav-content .hide {
+    display: none;
+  }
+}
+main nav .nav-content .selected {
+  border-bottom: 2px rgb(236, 109, 62) solid;
+  border-radius: 0;
+}
 main nav .nav-content a {
   padding: 8px;
   line-height: 30px;
@@ -544,6 +556,7 @@ main nav .nav-content a {
   justify-content: center;
   align-items: center;
   gap: 5px;
+  color: #c9d1d9;
 }
 main nav .nav-content a span {
   background-color: #525355;
