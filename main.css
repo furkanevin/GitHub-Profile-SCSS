@@ -475,15 +475,16 @@ header .nav .expand .search P {
 }
 header .nav .expand .links {
   min-width: 320px;
+  display: flex;
 }
 header .nav .expand .links a {
+  font-family: "Poppins", sans-serif;
   color: #fafafa;
   font-weight: 300;
   margin-right: 16px;
   font-size: 14px;
   line-height: 16.1px;
-  font-family: "Noto Sans";
-  font-weight: 400;
+  font-weight: 500;
 }
 header .nav .right-links {
   display: flex;
@@ -518,6 +519,7 @@ main nav {
   display: flex;
   justify-content: center;
   padding: 0 32px;
+  border-bottom: 0.1px solid rgba(161, 161, 161, 0.192);
 }
 main nav .nav-empty {
   width: 296px;
@@ -554,4 +556,7 @@ main nav .nav-content a span {
   overflow: hidden;
   width: 22px;
   height: 20px;
+}
+main nav .nav-content a .octicon {
+  color: #525355;
 }/*# sourceMappingURL=main.css.map */
