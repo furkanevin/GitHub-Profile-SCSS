@@ -671,6 +671,8 @@ main .content .left-side .achievements a {
   line-height: 19px;
 }
 main .content .left-side .achievements a span {
+  font-size: 11px;
+  line-height: 14px;
   color: #3fb950;
   border: 1px solid #3fb950;
   border-radius: 20px;
@@ -679,6 +681,47 @@ main .content .left-side .achievements a span {
 main .content .right-side {
   flex: 2;
   border: 1px solid rgb(48, 40, 40);
+}
+main .content .right-side .repo {
+  width: 300px;
+  padding: 16px;
+  height: 100px;
+  border: 1px solid rgba(73, 79, 85, 0.6509803922);
+  font-size: 14px;
+  line-height: 21px;
+  color: #c9d1d9;
+  font-family: "poppins", sans-serif;
+  border-radius: 6px;
+}
+main .content .right-side .repo-name {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+main .content .right-side .repo-name .first-side {
+  display: flex;
+  gap: 10px;
+}
+main .content .right-side .repo-name .first-side p {
+  color: #58a6ff;
+}
+main .content .right-side .repo-name .first-side span {
+  border-radius: 23.8px;
+  border: 1px solid;
+  padding: 1px 5px;
+  font-size: 11px;
+  line-height: 18px;
+  color: #8b949e;
+  font-weight: 600;
+}
+main .content .right-side .repo-about {
+  font-size: 12px;
+  line-height: 18px;
+  color: #8b949e;
+  margin-top: 8px;
+}
+main .content .right-side .repo-info {
+  display: flex;
 }
 main .content .right-side .parent {
   display: grid;
