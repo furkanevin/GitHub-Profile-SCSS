@@ -681,9 +681,18 @@ main .content .left-side .achievements a span {
 main .content .right-side {
   flex: 2;
   border: 1px solid rgb(48, 40, 40);
+  padding: 16px;
 }
-main .content .right-side .repo {
-  width: 300px;
+main .content .right-side .pinned {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr) repeat(2, 0fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+main .content .right-side .pinned .repo {
+  max-width: 420px;
+  min-width: 220px;
   padding: 16px;
   height: 100px;
   border: 1px solid rgba(73, 79, 85, 0.6509803922);
@@ -693,35 +702,68 @@ main .content .right-side .repo {
   font-family: "poppins", sans-serif;
   border-radius: 6px;
 }
-main .content .right-side .repo-name {
+main .content .right-side .pinned .repo-name {
   display: flex;
   justify-content: space-between;
   gap: 10px;
 }
-main .content .right-side .repo-name .first-side {
+main .content .right-side .pinned .repo-name .first-side {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
-main .content .right-side .repo-name .first-side p {
-  color: #58a6ff;
+main .content .right-side .pinned .repo-name .first-side svg {
+  scale: 1.2;
 }
-main .content .right-side .repo-name .first-side span {
+main .content .right-side .pinned .repo-name .first-side p {
+  font-size: 14px;
+  color: #58a6ff;
+  line-height: 21px;
+}
+main .content .right-side .pinned .repo-name .first-side span {
   border-radius: 23.8px;
   border: 1px solid;
   padding: 1px 5px;
   font-size: 11px;
   line-height: 18px;
-  color: #8b949e;
+  color: rgba(139, 148, 158, 0.6705882353);
   font-weight: 600;
 }
-main .content .right-side .repo-about {
+main .content .right-side .pinned .repo-name svg {
+  scale: 1.4;
+}
+main .content .right-side .pinned .repo-about {
   font-size: 12px;
   line-height: 18px;
   color: #8b949e;
   margin-top: 8px;
 }
-main .content .right-side .repo-info {
+main .content .right-side .pinned .repo-info {
   display: flex;
+  gap: 15px;
+  margin-top: 8px;
+}
+main .content .right-side .pinned .repo-info .value {
+  display: inline;
+  margin-left: -8px;
+  font-size: 14px;
+  color: #8b949e;
+}
+main .content .right-side .pinned .repo-info p {
+  font-size: 12px;
+  line-height: 18px;
+  color: #8b949e;
+}
+main .content .right-side .pinned .repo-info p span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  color: rgba(104, 49, 104, 0.671);
+  background-color: rgba(129, 59, 129, 0.671);
+  margin-right: 5px;
+}
+main .content .right-side .pinned .repo-info p svg {
+  margin-top: 3px;
 }
 main .content .right-side .parent {
   display: grid;
@@ -729,7 +771,6 @@ main .content .right-side .parent {
   grid-template-rows: repeat(3, 1fr) repeat(2, 0fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  border: 1px solid rgb(48, 40, 40);
 }
 main .content .right-side .div1 {
   grid-area: 1/4/2/6;
