@@ -482,7 +482,7 @@ header .nav .expand .links a {
   color: #fafafa;
   font-weight: 300;
   margin-right: 16px;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 16.1px;
   font-weight: 500;
 }
@@ -577,12 +577,10 @@ main nav .nav-content a .octicon {
 main .content {
   width: 100%;
   min-height: 40vh;
-  border: 1px solid;
   display: flex;
 }
 main .content .left-side {
   flex: 1;
-  border: 1px solid white;
   display: flex;
   justify-content: end;
 }
@@ -609,10 +607,73 @@ main .content .left-side .profile .name p {
   color: #c9d1d9;
 }
 main .content .left-side .profile .name .nick {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   color: #8b949e;
   font-weight: 300;
+}
+main .content .left-side .profile .info {
+  font-family: "poppins";
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 14px;
+  line-height: 21px;
+  padding-bottom: 12px;
+  border-bottom: 0.1px solid rgba(161, 161, 161, 0.192);
+}
+main .content .left-side .profile .info p {
+  font-size: 14px;
+  color: #c9d1d9;
+}
+main .content .left-side .profile .info p span {
+  color: #8b949e;
+}
+main .content .left-side .profile .info button {
+  background-color: #21262d;
+  color: #c9d1d9;
+  padding: 5px;
+  border-radius: 5px;
+  max-width: 296px;
+  height: 32px;
+  border: 0.1px solid rgba(128, 128, 128, 0.253);
+  cursor: pointer;
+}
+main .content .left-side .profile .info button:hover {
+  border: 0.1px solid rgba(153, 153, 153, 0.445);
+  background-color: #30363d;
+}
+main .content .left-side .profile .info a {
+  font-size: 12px;
+  color: #c9d1d9;
+}
+main .content .left-side .achievements {
+  font-family: "poppins", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+main .content .left-side .achievements p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #c9d1d9;
+}
+main .content .left-side .achievements .badges img {
+  width: 64px;
+}
+main .content .left-side .achievements a {
+  color: #58a6ff;
+  font-size: 11.9px;
+  line-height: 19px;
+}
+main .content .left-side .achievements a span {
+  color: #3fb950;
+  border: 1px solid #3fb950;
+  border-radius: 20px;
+  padding: 2px 4px;
 }
 main .content .right-side {
   flex: 2;
