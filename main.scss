@@ -309,11 +309,28 @@ main {
     }
     .right-side {
       flex: 2;
-      border: 1px solid rgb(48, 40, 40);
       padding: 16px;
+      color: #c9d1d9;
+      font-family: 'poppins';
       .pinned-info {
         display: flex;
         justify-content: space-between;
+        max-width: 850px;
+        margin-top: 4px;
+        margin-bottom: 6px;
+        p {
+          font-size: 15px;
+          line-height: 24px;
+        }
+        a {
+          font-size: 11px;
+          line-height: 18px;
+          cursor: pointer;
+          color: #8b949e;
+          &:hover {
+            color: #58a6ff;
+          }
+        }
       }
       .pinned {
         display: grid;
@@ -321,9 +338,10 @@ main {
         grid-template-rows: repeat(3, 1fr) repeat(2, 0fr);
         grid-column-gap: 16px;
         grid-row-gap: 16px;
+        max-width: 900px;
         .repo {
           max-width: 420px;
-          min-width: 220px;
+          min-width: 240px;
           padding: 16px;
           height: 100px;
           border: 1px solid #494f55a6;
