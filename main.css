@@ -522,11 +522,12 @@ main nav {
   border-bottom: 0.1px solid rgba(161, 161, 161, 0.192);
 }
 main nav .nav-empty {
-  width: 296px;
+  flex: 1;
   height: 100%;
   border: 1px blue solid;
 }
 main nav .nav-content {
+  flex: 2;
   width: 1280px;
   height: 100%;
   margin-left: 16px;
@@ -572,4 +573,48 @@ main nav .nav-content a span {
 }
 main nav .nav-content a .octicon {
   color: #525355;
+}
+main .content {
+  width: 100%;
+  min-height: 40vh;
+  border: 1px solid;
+  display: flex;
+}
+main .content .left-side {
+  flex: 1;
+  border: 1px solid white;
+  display: flex;
+  justify-content: end;
+}
+main .content .left-side .profile {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+main .content .left-side .profile .image {
+  margin-top: -20px;
+}
+main .content .left-side .profile .image img {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+}
+main .content .left-side .profile .name {
+  font-family: "poppins", sans-serif;
+  margin-top: 16px;
+}
+main .content .left-side .profile .name p {
+  font-size: 24px;
+  line-height: 30px;
+  color: #c9d1d9;
+}
+main .content .left-side .profile .name .nick {
+  font-size: 20px;
+  line-height: 24px;
+  color: #8b949e;
+  font-weight: 300;
+}
+main .content .right-side {
+  flex: 2;
+  border: 1px solid red;
 }/*# sourceMappingURL=main.css.map */
