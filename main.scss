@@ -123,8 +123,19 @@ header {
       align-items: center;
       a {
         margin-right: 16px;
+        position: relative;
+
         svg {
           color: #f0f6fc;
+        }
+        .dot {
+          position: absolute;
+          width: 10px;
+          right: -4px;
+        }
+        img {
+          width: 20px;
+          border-radius: 50%;
         }
         p {
           margin-top: -8px;
@@ -407,6 +418,10 @@ main {
               font-size: 12px;
               line-height: 18px;
               color: #8b949e;
+              img {
+                width: 12px;
+                margin: 0 5px;
+              }
               .html {
                 color: rgba(228, 121, 0, 0);
                 background-color: rgba(252, 101, 1, 0.945);

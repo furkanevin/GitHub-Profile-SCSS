@@ -497,9 +497,19 @@ header .nav .right-links {
 }
 header .nav .right-links a {
   margin-right: 16px;
+  position: relative;
 }
 header .nav .right-links a svg {
   color: #f0f6fc;
+}
+header .nav .right-links a .dot {
+  position: absolute;
+  width: 10px;
+  right: -4px;
+}
+header .nav .right-links a img {
+  width: 20px;
+  border-radius: 50%;
 }
 header .nav .right-links a p {
   margin-top: -8px;
@@ -782,6 +792,10 @@ main .content .right-side .pinned .repo-info p {
   font-size: 12px;
   line-height: 18px;
   color: #8b949e;
+}
+main .content .right-side .pinned .repo-info p img {
+  width: 12px;
+  margin: 0 5px;
 }
 main .content .right-side .pinned .repo-info p .html {
   color: rgba(228, 121, 0, 0);
