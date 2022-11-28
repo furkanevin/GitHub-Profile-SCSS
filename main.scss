@@ -44,9 +44,16 @@ header {
   font-size: 14px;
   .logo {
     margin-left: 0px;
+    cursor: pointer;
     svg {
       width: 32px;
       height: 32px;
+      transition: all 0.1s;
+
+      &:hover {
+        color: #96a4b4;
+        transition: all 0.1s;
+      }
     }
   }
   .nav {
@@ -106,6 +113,19 @@ header {
       .links {
         min-width: 320px;
         display: flex;
+        .pullr {
+          display: block;
+          white-space: nowrap;
+          @include mobile-max {
+            display: none;
+          }
+        }
+        .pulls {
+          display: none;
+          @include mobile-max {
+            display: block;
+          }
+        }
         a {
           font-family: 'Poppins', sans-serif;
           color: #fafafa;
@@ -114,6 +134,12 @@ header {
           font-size: 13px;
           line-height: 16.1px;
           font-weight: 500;
+          transition: all 0.1s;
+
+          &:hover {
+            color: #939496f3;
+            transition: all 0.1s;
+          }
         }
       }
     }
@@ -176,7 +202,7 @@ main {
       display: flex;
       justify-content: start;
       align-items: center;
-
+      gap: 10px;
       .hide {
         display: flex;
         @include mobile-max {
@@ -188,7 +214,7 @@ main {
         border-radius: 0;
       }
       a {
-        padding: 8px;
+        padding: 2px 2px;
         line-height: 30px;
         color: $header-color;
         border-radius: 6px;
@@ -198,6 +224,9 @@ main {
         align-items: center;
         gap: 5px;
         color: #c9d1d9;
+        &:hover {
+          background-color: #5253556b;
+        }
         span {
           background-color: #525355;
           border-radius: 50%;
@@ -233,6 +262,7 @@ main {
             width: 270px;
             height: 270px;
             border-radius: 50%;
+            cursor: pointer;
           }
         }
         .name {
@@ -259,11 +289,16 @@ main {
           line-height: 21px;
           padding-bottom: 12px;
           border-bottom: 0.1px solid rgba(161, 161, 161, 0.192);
+
           p {
             font-size: 14px;
             color: #c9d1d9;
+            cursor: pointer;
             span {
               color: #8b949e;
+              &:hover {
+                color: #58a6ff;
+              }
             }
           }
           button {
@@ -298,10 +333,16 @@ main {
         display: flex;
         flex-direction: column;
         gap: 14px;
+
         p {
           font-size: 16px;
           line-height: 24px;
           color: #c9d1d9;
+          cursor: pointer;
+          &:hover {
+            color: #58a6ff;
+            text-decoration: underline;
+          }
         }
         .badges {
           img {
@@ -312,6 +353,10 @@ main {
           color: #58a6ff;
           font-size: 11.9px;
           line-height: 19px;
+          &:hover {
+            color: #58a6ff;
+            text-decoration: underline;
+          }
           span {
             font-size: 11px;
             line-height: 14px;
@@ -383,6 +428,10 @@ main {
                 color: #58a6ff;
                 line-height: 21px;
                 font-weight: 400;
+                cursor: pointer;
+                &:hover {
+                  text-decoration: underline;
+                }
               }
               span {
                 border-radius: 23.8px;

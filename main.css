@@ -408,10 +408,16 @@ header {
 }
 header .logo {
   margin-left: 0px;
+  cursor: pointer;
 }
 header .logo svg {
   width: 32px;
   height: 32px;
+  transition: all 0.1s;
+}
+header .logo svg:hover {
+  color: #96a4b4;
+  transition: all 0.1s;
 }
 header .nav {
   display: flex;
@@ -482,6 +488,23 @@ header .nav .expand .links {
   min-width: 320px;
   display: flex;
 }
+header .nav .expand .links .pullr {
+  display: block;
+  white-space: nowrap;
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  header .nav .expand .links .pullr {
+    display: none;
+  }
+}
+header .nav .expand .links .pulls {
+  display: none;
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  header .nav .expand .links .pulls {
+    display: block;
+  }
+}
 header .nav .expand .links a {
   font-family: "Poppins", sans-serif;
   color: #fafafa;
@@ -490,6 +513,11 @@ header .nav .expand .links a {
   font-size: 13px;
   line-height: 16.1px;
   font-weight: 500;
+  transition: all 0.1s;
+}
+header .nav .expand .links a:hover {
+  color: rgba(147, 148, 150, 0.9529411765);
+  transition: all 0.1s;
 }
 header .nav .right-links {
   display: flex;
@@ -549,6 +577,7 @@ main nav .nav-content {
   display: flex;
   justify-content: start;
   align-items: center;
+  gap: 10px;
 }
 main nav .nav-content .hide {
   display: flex;
@@ -563,7 +592,7 @@ main nav .nav-content .selected {
   border-radius: 0;
 }
 main nav .nav-content a {
-  padding: 8px;
+  padding: 2px 2px;
   line-height: 30px;
   color: #f0f6fc;
   border-radius: 6px;
@@ -573,6 +602,9 @@ main nav .nav-content a {
   align-items: center;
   gap: 5px;
   color: #c9d1d9;
+}
+main nav .nav-content a:hover {
+  background-color: rgba(82, 83, 85, 0.4196078431);
 }
 main nav .nav-content a span {
   background-color: #525355;
@@ -608,6 +640,7 @@ main .content .left-side .profile .image img {
   width: 270px;
   height: 270px;
   border-radius: 50%;
+  cursor: pointer;
 }
 main .content .left-side .profile .name {
   font-family: "poppins", sans-serif;
@@ -637,9 +670,13 @@ main .content .left-side .profile .info {
 main .content .left-side .profile .info p {
   font-size: 14px;
   color: #c9d1d9;
+  cursor: pointer;
 }
 main .content .left-side .profile .info p span {
   color: #8b949e;
+}
+main .content .left-side .profile .info p span:hover {
+  color: #58a6ff;
 }
 main .content .left-side .profile .info button {
   background-color: #21262d;
@@ -676,6 +713,11 @@ main .content .left-side .achievements p {
   font-size: 16px;
   line-height: 24px;
   color: #c9d1d9;
+  cursor: pointer;
+}
+main .content .left-side .achievements p:hover {
+  color: #58a6ff;
+  text-decoration: underline;
 }
 main .content .left-side .achievements .badges img {
   width: 64px;
@@ -684,6 +726,10 @@ main .content .left-side .achievements a {
   color: #58a6ff;
   font-size: 11.9px;
   line-height: 19px;
+}
+main .content .left-side .achievements a:hover {
+  color: #58a6ff;
+  text-decoration: underline;
 }
 main .content .left-side .achievements a span {
   font-size: 11px;
@@ -758,6 +804,10 @@ main .content .right-side .pinned .repo-name .first-side p {
   color: #58a6ff;
   line-height: 21px;
   font-weight: 400;
+  cursor: pointer;
+}
+main .content .right-side .pinned .repo-name .first-side p:hover {
+  text-decoration: underline;
 }
 main .content .right-side .pinned .repo-name .first-side span {
   border-radius: 23.8px;
