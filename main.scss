@@ -494,6 +494,30 @@ main {
           }
         }
       }
+      .contr {
+        .activity {
+          width: 100%;
+          margin-top: 21px;
+          margin-left: 16px;
+          min-height: 30vh;
+          border-top: 0.1px rgba(128, 128, 128, 0.541) solid;
+          border-left: 2px rgb(44, 44, 44) solid;
+          position: relative;
+          p {
+            position: absolute;
+            left: -10px;
+            top: -10px;
+            background-color: #0d1117;
+            padding-right: 16px;
+            padding-bottom: 8px;
+            font-size: 12px;
+            line-height: 18px;
+            span {
+              color: #525355;
+            }
+          }
+        }
+      }
     }
   }
 }
