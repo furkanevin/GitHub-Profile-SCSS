@@ -495,9 +495,24 @@ main {
         }
       }
       .contr {
+        p {
+          display: flex;
+          max-width: 880px;
+          justify-content: space-between;
+          .r {
+            width: 90px;
+            font-size: 12px;
+            line-height: 18px;
+            height: 34px;
+            background-color: #1f6feb;
+            padding: 8px 16px;
+            border-radius: 6px;
+            color: #fff;
+          }
+        }
         .activity {
-          width: 100%;
           margin-top: 21px;
+          max-width: 700px;
           margin-left: 16px;
           min-height: 30vh;
           border-top: 0.1px rgba(128, 128, 128, 0.541) solid;
@@ -514,6 +529,142 @@ main {
             line-height: 18px;
             span {
               color: #525355;
+              margin-left: 5px;
+            }
+          }
+          &-info {
+            display: flex;
+            flex-direction: column;
+            margin-top: 36px;
+            margin-left: 26px;
+            .info-heading {
+              margin-left: -50px;
+              width: 400px;
+              display: flex;
+
+              img {
+                width: 25px;
+                height: 25px;
+                margin-left: 10px;
+                background-color: rgba(128, 128, 128, 0.863);
+                border-radius: 50%;
+                padding: 3px;
+              }
+              p {
+                margin-left: 20px;
+                margin-top: 10px;
+                position: relative;
+                font-size: 16px;
+                line-height: 20px;
+                cursor: pointer;
+                &:hover {
+                  color: #58a6ff;
+                }
+              }
+            }
+            .activities {
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              div {
+                display: flex;
+                .repo {
+                  min-width: 300px;
+                  a {
+                    color: #58a6ff;
+                    font-size: 14px;
+                    line-height: 17.5px;
+                    margin-right: 8px;
+                    cursor: pointer;
+                    font-weight: 200;
+                    white-space: nowrap;
+                    &:hover {
+                      text-decoration: underline;
+                    }
+                  }
+                  span {
+                    color: #8b949e;
+                    font-size: 12px;
+                    line-height: 15px;
+                    text-decoration: none;
+                    white-space: nowrap;
+                  }
+                }
+
+                .graph {
+                  margin-left: 200px;
+                  width: 46px;
+                  height: 8px;
+                  border-radius: 6px;
+                  background-color: #40c463;
+                }
+                .graph-2 {
+                  margin-left: 200px;
+                  width: 36px;
+                  height: 8px;
+                  border-radius: 6px;
+                  background-color: #40c463;
+                }
+                .graph-3 {
+                  margin-left: 200px;
+                  width: 30px;
+                  height: 8px;
+                  border-radius: 6px;
+                  background-color: #9be9a8;
+                }
+                .graph-4 {
+                  margin-left: 200px;
+                  width: 20px;
+                  height: 8px;
+                  border-radius: 6px;
+                  background-color: #9be9a8;
+                }
+                .graph-5 {
+                  margin-left: 200px;
+                  width: 8px;
+                  height: 8px;
+                  border-radius: 6px;
+                  background-color: #9be9a8;
+                }
+                .graph-e {
+                  font-size: 12px;
+                  display: flex;
+
+                  width: 220px;
+                  .madeof {
+                    display: flex;
+                    gap: 5px;
+                    align-items: center;
+                    width: 100px;
+                    img {
+                      width: 12px;
+                      height: 12px;
+                    }
+                  }
+                  .date {
+                    margin-left: 80px;
+                    font-size: 12px;
+                    color: #8b949e;
+                    white-space: nowrap;
+                    text-align: start;
+                  }
+                }
+              }
+            }
+            button {
+              margin-top: 10px;
+              background-color: $main-background;
+              border: #525355 0.1px solid;
+              color: #58a6ff;
+              font-size: 12px;
+              line-height: 20px;
+              padding: 8px 6px;
+              transition: all 0.2s;
+              border-radius: 6px;
+              &:hover {
+                background-color: #313233ef;
+                transition: all 0.2s;
+              }
             }
           }
         }
