@@ -6,7 +6,10 @@
 <h1>Preview</h1>
 <div align="center">
 <img src="https://user-images.githubusercontent.com/109925130/204618956-4b80ebb1-ce7e-4dea-9cd8-962141edc924.png">
-<img src="https://media0.giphy.com/media/k2gxAAzMZywr8pEjST/giphy.gif?cid=790b761111877749acd70a61393d7056177a6db33d6643b4&rid=giphy.gif&ct=g">
+
+https://user-images.githubusercontent.com/109925130/204623792-d927df3f-3670-47e3-8016-638b7df4c0c3.mp4
+
+
 </div>
 
 
